@@ -104,6 +104,8 @@ fn program() {
             Some(Manager::View) => manager::view_student(&students),
             Some(Manager::Edit) => manager::edit_student(&mut students),
             Some(Manager::Delete) => manager::delete_student(&mut students),
+            Some(Manager::Total) => (),
+            Some(Manager::Print) => (),
             None => break,
         }
     }

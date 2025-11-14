@@ -104,6 +104,8 @@ pub fn main_product() {
             Some(Manager::View) => manager::view_product(&students),
             Some(Manager::Edit) => manager::edit_product(&mut students),
             Some(Manager::Delete) => manager::edit_product(&mut students),
+            Some(Manager::Total) => (),
+            Some(Manager::Print) => (),
             None => break,
         }
     }
